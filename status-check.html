@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #status-check-page {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#status-check-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#status-check-page label {
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#status-check-page input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+#status-check-page input[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#status-check-page input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#status-result {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#status-result p {
+  font-size: 1.2em;
+}
+        </style>
+    </head>
+    <body>
+        <div id="status-check-page">
+            <h1>Check your voter registration status</h1>
+            <form>
+              <label for="ssn">Enter your SSN:</label>
+              <input type="text" id="ssn" name="ssn"><br>
+              <label for="dob">Enter your date of birth:</label>
+              <input type="text" id="dob" name="dob"><br>
+              <input type="submit" value="Check status">
+            </form>
+            <div id="status-result">
+              <p id="status-message"></p>
+            </div>
+          </div>
+    </body>
+</html>
+  

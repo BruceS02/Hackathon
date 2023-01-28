@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+form {
+  margin: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+    </style>
+  <title>Contact Us</title>
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <nav>
+    <a href="homepage.html">Home</a>
+    <a href="register.html">Register to Vote</a>
+    <a href="voter-guides.html">View Voter Guides</a>
+  </nav>
+  <form action="submit-form.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
